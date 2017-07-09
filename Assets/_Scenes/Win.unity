@@ -480,7 +480,7 @@ GameObject:
   - component: {fileID: 2135386180}
   - component: {fileID: 2135386179}
   m_Layer: 5
-  m_Name: Start Button
+  m_Name: Play Again Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -501,7 +501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -97.00001}
+  m_AnchoredPosition: {x: 0, y: -97}
   m_SizeDelta: {x: 399, y: 78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2135386179
@@ -544,7 +544,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 203616921}
-        m_MethodName: loadLevel
+        m_MethodName: LoadLevel
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

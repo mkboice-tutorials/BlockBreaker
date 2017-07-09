@@ -7,9 +7,9 @@ public class MusicPlayer : MonoBehaviour
 
     public static MusicPlayer instance = null;
 
-    // Use this for initialization
-    void Start()
+    void Awake()
     {
+        Debug.Log("Music player Awake " + GetInstanceID());
         if (instance != null)
         {
             Destroy(gameObject);
@@ -21,7 +21,12 @@ public class MusicPlayer : MonoBehaviour
             GameObject.DontDestroyOnLoad(gameObject);
             print("Creating music player");
         }
-            
+    }
+
+    // Use this for initialization
+    void Start()
+    {
+        Debug.Log("Music player Start " + GetInstanceID());
     }
 	
     // Update is called once per frame

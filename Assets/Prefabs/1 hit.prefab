@@ -79,6 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHits: 1
+  hitSprites: []
 --- !u!212 &212329570806062208
 SpriteRenderer:
   m_ObjectHideFlags: 1

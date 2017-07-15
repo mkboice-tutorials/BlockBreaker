@@ -1067,12 +1067,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 30d70f97ee70542959626ae40bcfb9d4, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1407141230 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114471778159181160, guid: 14d53bc5a79f444418e756238c949bee,
-    type: 2}
-  m_PrefabInternal: {fileID: 1544560639}
-  m_Script: {fileID: 11500000, guid: 45784bced62394dfaa77f3eaad1c5970, type: 3}
 --- !u!1 &1453983177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,7 +1201,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4931444097515932, guid: c0473abfc977f4a898b4e2f860ca2b6f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.84
+      value: 0.87
       objectReference: {fileID: 0}
     - target: {fileID: 4931444097515932, guid: c0473abfc977f4a898b4e2f860ca2b6f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1233,11 +1227,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114747297790349742, guid: c0473abfc977f4a898b4e2f860ca2b6f,
-        type: 2}
-      propertyPath: paddle
-      value: 
-      objectReference: {fileID: 1407141230}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0473abfc977f4a898b4e2f860ca2b6f, type: 2}
   m_IsPrefabParent: 0

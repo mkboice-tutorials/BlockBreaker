@@ -8,6 +8,9 @@ public class Paddle : MonoBehaviour
 
     private Ball ball;
 
+    private const float xMinPos = 0.8f;
+    private const float xMaxPos = 15.2f;
+
     void Start()
     {
         ball = GameObject.FindObjectOfType<Ball>();
@@ -31,7 +34,7 @@ public class Paddle : MonoBehaviour
     {
         Vector3 paddlePos = new Vector3(0.5f, this.transform.position.y, 0f);
         Vector3 ballPos = ball.transform.position;
-        paddlePos.x = Mathf.Clamp(ballPos.x, 0.5f, 15.5f);
+        paddlePos.x = Mathf.Clamp(ballPos.x, xMinPos, xMaxPos);
         this.transform.position = paddlePos;
     }
 
@@ -39,7 +42,7 @@ public class Paddle : MonoBehaviour
     {
         Vector3 paddlePos = new Vector3(0.5f, this.transform.position.y, 0f);
         float mousePosInBlocks = Input.mousePosition.x / Screen.width * 16;
-        paddlePos.x = Mathf.Clamp(mousePosInBlocks, 0.5f, 15.5f);
+        paddlePos.x = Mathf.Clamp(mousePosInBlocks, xMinPos, xMaxPos);
         this.transform.position = paddlePos;
     }
 }

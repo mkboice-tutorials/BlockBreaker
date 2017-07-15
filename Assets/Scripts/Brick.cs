@@ -63,6 +63,10 @@ public class Brick : MonoBehaviour
         {
             this.GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
         }
+        else
+        {
+            Debug.LogError("Brick sprite missing");
+        }
     }
 
 
